@@ -36,7 +36,7 @@ order.setPrice(110.56);
 order.setEmail("abc@gmail.com");
 
 // Valildate Order
-ConstraintViolation<Order>[] violations = Validator.validate(order);
+ConstraintViolation<Order>[] violations = BeanValidator.validate(order);
 if(violations != null && violations.length > 0)
 {
 	for(ConstraintViolation<Order> cv : violations)
@@ -49,5 +49,5 @@ if(violations != null && violations.length > 0)
 ```
 
 ## 自定义验证规则
-
+待续
 
